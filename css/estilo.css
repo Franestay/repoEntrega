@@ -1,0 +1,135 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/*Nav menu*/
+
+.flexNav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  justify-content: space-evenly;
+  padding: 40px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  background-color: rgb(5, 5, 5);
+}
+
+.flexNav li a {
+  text-decoration: none;
+  font-family: "Roboto Slab";
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+.flexNav li a:hover {
+  color: gold;
+  font-size: 1rem;
+}
+
+/*header*/
+
+header {
+  height: 300px;
+  background-image: linear-gradient(ivory, pink);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header h1 {
+  color: black;
+  text-align: center;
+  font-size: 4rem;
+  line-height: 1.3;
+  font-family: "Rampart One", cursive;
+}
+
+.paraTransicion:hover {
+  transition: 3s;
+  font-size: 10rem;
+  color: white;
+}
+
+/*main*/
+main {
+  background-image: linear-gradient(ivory, white);
+  height: 800px;
+}
+.grilla {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  /*grid-template-rows: 300px 50px 800px 200px;*/
+  grid-template-rows: 400px 400px;
+  grid-template-areas:
+    "section section"
+    "img img";
+
+  justify-items: center;
+  align-items: center;
+}
+section {
+  text-align: justify;
+  text-align: center;
+  grid-area: section;
+}
+
+div {
+  grid-area: img;
+}
+.tituloPrincipal {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+}
+
+.descripcion {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 30px;
+  text-align: justify;
+  line-height: 1.5;
+  color: black;
+  margin: 20px;
+  padding: 10px;
+}
+/*tabla*/
+table {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  width: 800;
+  margin: 10px;
+  border: 1px solid black;
+}
+/*formulario*/
+form {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  padding: 0.4rem;
+  font-family: "Inconsolata", monospace;
+  background-color: rgb(14, 13, 13);
+  color: white;
+}
+/*footer*/
+.footer {
+  text-align: center;
+  font-weight: bold;
+  font-family: "Roboto Slab";
+  font-size: 20px;
+  background-color: rgb(105, 195, 255);
+  height: 200px;
+}
