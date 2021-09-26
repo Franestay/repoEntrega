@@ -53,6 +53,10 @@ header h1 {
   color: white;
 }
 
+img {
+  height: 300px;
+  width: 300px;
+}
 /*main*/
 main {
   background-image: linear-gradient(ivory, white);
